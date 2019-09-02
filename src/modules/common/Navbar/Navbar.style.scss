@@ -1,0 +1,71 @@
+.Navbar_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 8%;
+
+    .navitem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        height: 100%;
+        text-decoration: none;
+    }
+
+    .navitem:hover {
+        cursor: pointer;
+        animation: navanimation 1s 1;
+        animation-direction: alternate;
+    }
+    @keyframes navanimation {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    #Navbar_Homepage {
+        background-color: transparent;
+        color: green;
+
+        &.selected,
+        &:hover {
+            background-color: green;
+            color: white;
+        }
+    }
+
+    #Navbar_Persondelete {
+        background-color: transparent;
+        color: blue;
+
+        &.selected,
+        &:hover {
+            background-color: blue;
+            color: white;
+        }
+    }
+
+    #Navbar_Personpost {
+        background-color: transparent;
+        color: red;
+
+        &.selected,
+        &:hover {
+            background-color: red;
+            color: white;
+        }
+    }
+
+    #Navbar_Contact {
+        background-color: transparent;
+        color: orange;
+
+        &.selected,
+        &:hover {
+            background-color: orange;
+            color: white;
+        }
+    }
+}
